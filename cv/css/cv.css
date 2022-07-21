@@ -1,0 +1,112 @@
+/* fonts
+font-family: 'Hahmlet', serif;
+font-family: 'Xanh Mono', monospace;
+font-family: 'Noto Serif KR', serif;
+*/
+
+.kr {display: none; word-break: keep-all;}
+.en {display: inline;}
+
+body {margin: 0; padding: 0;}
+
+main {width: 100%; padding: 40px 20px; background-color: #0e192f;}
+
+.name,
+.message,
+.info {font-family: 'Noto Serif KR', serif; margin: 0px 80px;}
+
+.name {color:#F1F6F9; letter-spacing: 0.08em; font-size: 30px;}
+
+.name .kr {font-family: 'Hahmlet', serif;}
+
+.message {color: #9BA4B4; font-size: 15px;}
+
+.info {color: rgb(179, 200, 218); font-size: 13px;}
+.info a, .info a:hover {color: rgb(179, 200, 218); padding: 0 3px; text-decoration: none;}
+
+section {padding: 60px 180px;}
+section:last-child {padding-bottom: 100px;}
+
+.paragraph {height: auto; font-size: 15px; text-align: left; padding: 10px 30px; line-height: 1.7em; font-family: 'Hahmlet', serif;}
+.paragraph ul {padding-left: 10px; margin-bottom: 0;}
+.paragraph li {list-style: ' - ';}
+.paragraph li a {text-decoration: none; color: #7db4b9;}
+.col-lg-6 {margin-bottom: 30px;}
+
+.title {color: #14274E; font-size: 20px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px rgb(39, 42, 65); padding-top: 40px;}
+.stitle {color: rgb(75, 75, 75); font-size: 17px;}
+
+.pytitle {text-decoration: none;}
+.pytitle:hover {text-decoration: none; color: #7db4b9;}
+
+.date {color:rgb(147, 163, 177); font-size: 13px;}
+
+.award {display: flex; padding: 3px 0;}
+.award-left {color:rgb(147, 163, 177); flex: 0.3; text-align: right; padding-right: 3px;}
+.award-right {flex: 0.7; text-align: left; padding-left: 3px;}
+.award-right span {color:rgb(100, 100, 100); font-size: 13px;}
+
+.techstack {font-size: 13px; color: rgb(209, 161, 161);}
+
+.url, .url:hover {font-size: 13px; text-decoration: none; color: #827397;}
+
+footer {height: 180px; background-color: #0e192f; padding: 0px 220px; color: rgb(179, 200, 218); font-family: 'Hahmlet', serif;}
+nav {height: 110px; display: flex; padding-top: 20px;}
+nav div:first-child{flex:1;}
+nav div:last-child{flex:1;}
+
+nav a {color: white; font-size: 12px;  text-decoration: none;}
+footer button {color: white; background-color: #0e192f; border: none;}
+nav a:hover, footer button:hover {color: rgb(179, 200, 218); transition: all 0.5s ease-out 0.05s; text-decoration:none;}
+.bfont {margin: 0px; font-size: 12px;}
+
+footer table {width: 100%; text-align: center;}
+footer table td {font-size: 8px; vertical-align: bottom; height:70px}
+
+@media screen and (max-width: 1000px) { /* for ipad */
+    .name, .info, .message {margin: 0 30px;}
+
+    section {padding: 10px 25px 20px;}
+    section:last-child {padding-bottom: 50px;}
+
+    .paragraph {padding: 10px 20px;}
+
+    .award-left {flex: 0.5;}
+    .award-right {flex: 1;}
+
+    footer {padding: 0px 75px;}
+}
+
+@media screen and (max-width: 600px) { /* for iphone */
+    main {padding: 30px 10px;}
+
+    .name,
+    .message,
+    .info {margin: 0 15px;}
+    
+    .name {font-size: 20px; letter-spacing: 0.06em;}
+    
+    .message {font-size: 14px;}
+    
+    .info {font-size: 10px;}
+
+    section {padding: 15px 20px;}
+    section:last-child {padding-bottom: 30px;}
+
+    .timeline .days .day .events {padding: 5px 8px; font-size: 8px;}
+    .timeline .days .day .events .date {padding: 10px; font-size: 10px;}
+    .timeline .days .day .events p {margin-bottom: 3px;}
+    .timeline .days .day .events p:last-child {margin-bottom: 5px;}
+    
+    .title {font-size: 12px; padding-top: 20px; margin-bottom: 2px;}
+    .stitle {font-size: 10px; padding-top: 2px;}
+
+    .paragraph {font-size: 9px; padding: 6px 10px;}
+    .col-lg-6 {margin: 15px auto;}
+    .date, .techstack, .url, .url:hover, .award-right span {font-size: 6px;}
+
+    footer {height: 120px; padding: 0px 50px; line-height: 0.9em;}
+    nav {height: 90px; padding-top: 15px;}
+    nav a, .bfont {font-size: 7px;}
+    footer table td {font-size: 6px; vertical-align: bottom; height:30px}
+}
