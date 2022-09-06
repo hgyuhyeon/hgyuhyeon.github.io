@@ -1,0 +1,119 @@
+/* fonts
+font-family: 'Hahmlet', serif;
+font-family: 'Xanh Mono', monospace;
+font-family: 'Noto Serif KR', serif;
+*/
+
+:root {
+    --bg-color: #282c35;
+    --dark-navy: #1c273c;
+    --blue: #4b5b79;
+    --light-blue: #b3c8da;
+    --light-blue-url: #7db4b9;
+    --greyish-light-blue: #93a3b1;
+    --pink: #d1a1a1;
+    --purple: #827397;
+    --light-grey-blue: #9BA4B4;
+    --light-grey: #989898;
+    --grey: #646464;
+    --white: #F1F6F9;
+}
+
+html, body {height: 100%;}
+html {scroll-behavior: smooth; overflow-y: scroll;}
+body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color)}
+
+
+header {width: 100%; display: flex; justify-content: space-between;}
+header a {color: var(--light-blue); font-size: 15px;}
+header .logo {padding: 3vw 0 3vw 10vw;}
+header .logo a {font-size: 25px;}
+header .toggle {display: none; position: absolute; right: 10vw; top: 3vw; border: none; background-color: transparent; color: var(--light-blue);}
+nav {padding: 3vw 0; display: flex; flex-direction: row; padding-right: 5vw;}
+nav ol {margin: auto;}
+nav a {color: white; font-size: 15px; transition: all 0.5s ease-out 0.05s; text-decoration: none;}
+nav a:hover {color: var(--light-blue); transition: all 0.5s ease-out 0.05s; text-decoration: none;}
+
+main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw; flex: 1; min-height: 100vh;}
+main .name {margin: 3vw 0 2vw;}
+main h3 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.5em; font-size: 30px;}
+main h1 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 50px;}
+
+main .message {font-size: 20px; color: var(--light-grey-blue);}
+main .info {font-size: 20px; color: var(--light-blue);}
+main .info a, main .info a:hover {color: var(--light-blue); padding-right: 5px; text-decoration: none;}
+
+
+section {padding: 7vw 10vw 3vw;}
+
+.paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 3vw 2vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
+.paragraph ul {padding-left: 17px; margin: 0;}
+.paragraph li {list-style: square;}
+.paragraph li::marker {color: var(--greyish-light-blue);}
+.paragraph p {margin: 0;}
+
+.title { color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue); padding-top: 40px;}
+.stitle {color: var(--greyish-light-blue); font-size: 19px;}
+
+.pytitle {text-decoration: none;}
+.pytitle:hover {text-decoration: none; color: var(--purple);}
+
+.date {color: var(--blue); font-size: 12px;}
+
+.award {display: flex; padding: 3px 0;}
+.award-left {color: var(--greyish-light-blue); flex: 0.3; text-align: right; padding-right: 3px;}
+.award-right {flex: 0.7; text-align: left; padding-left: 3px;}
+.award-right span {color: var(--grey); font-size: 13px;}
+
+.techstack {font-size: 13px; color: var(--pink);}
+
+.url, .url:hover {font-size: 13px; text-decoration: none; color: var(--purple);}
+
+#skill b {color: var(--greyish-light-blue)}
+#skill span {color: var(--white)}
+
+#experience .paragraph {display: flex; flex-direction: column;}
+#experience .paragraph .container, #project .paragraph .container, #side .paragraph .container {padding-bottom: 2vw;}
+
+#language ul {margin: 0 auto 10px;}
+
+#contact div:last-child {text-align: center;}
+#contact a {padding: 8px 15px; border: solid 1px var(--light-blue-url); border-radius: 10px; color: var(--white); font-size: 14px;}
+#contact a:hover {background-color: var(--light-blue-url); transition: all 0.5s ease-out 0.05s;}
+
+
+footer {color: var(--light-blue); font-family: 'Hahmlet', serif; text-align: center;}
+footer p {font-size: 8px;}
+
+
+@media screen and (max-width: 1000px) { /* for ipad */
+    .award-left {flex: 0.5;}
+    .award-right {flex: 1;}
+}
+
+@media screen and (max-width: 700px) { /* for iphone */
+    header {display: block;}
+    header .logo {padding-left: 5vw; padding-bottom: 0;}
+    header .logo a {font-size: 15px;}
+    header .toggle {display: block; right: 5vw;}
+
+    nav.active {display: flex;}
+    nav {flex-direction: column; display: none; margin-top: 3vw; padding: 1vw 0;}
+    nav ol {text-align: center; padding: 0;}
+    nav a {font-size: 10px;}
+
+    main {min-height: 50vh; margin: 50vw 15vw;}
+    main h3 {font-size: 23px;}
+    main h1 {font-size: 30px;}
+    main .message, main .info {font-size: 15px;}
+
+    section {padding: 20vw 10vw;}
+
+    .title {font-size: 18px;}
+    .stitle {font-size: 14px;}
+
+    .paragraph {font-size: 12px;}
+    .date, .techstack, .url, .url:hover, .award-right span {font-size: 8px;}
+
+    footer p {font-size: 6px;}
+}

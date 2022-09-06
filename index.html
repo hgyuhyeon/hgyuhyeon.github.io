@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyuhyeon Hwang</title>
+
+    <!-- mobile thumbnail -->
+    <meta property="og:title" content="Gyuhyeon Hwang">
+    <meta property="og:description" content="Resume">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link href="static/css/style.css" rel="stylesheet" />
+    <link href="static/css/normalize.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="https://hgyuhyeon.github.io"><i class="fa fa-paperclip"></i></a></div>
+        <button class="toggle"><i class="fa fa-align-right"></i></button>
+        <nav>
+            <ol><a href="#about">About</a></ol>
+            <ol><a href="#experience">Experience</a></ol>
+            <ol><a href="#project">Project</a></ol>
+            <ol><a href="resume.pdf">Resume</a></ol>
+            <ol><a href="#contact">Contact</a></ol>
+        </nav>
+    </header>
+
+
+    <main data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="name">
+            <h3>Hello, I am</h3>
+            <h1>Gyuhyeon Hwang.</h1>
+        </div>
+
+        <p class="message">4th-grade student backend developer specializing in Python/Django development</p>
+
+        <p class="info">
+            <a href="mailto:hwgyuhyeon@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/hgyuhyeon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gyuhyeon/"><i class="fab fa-linkedin-in"></i></a>
+            <!-- <a href="https://www.kaggle.com/gyuhyeonhwang"><i class="fab fa-kaggle"></i></a> -->
+        </p>
+    </main>
+
+
+    <section id="about" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">About</div>
+        <div class="paragraph">
+            Hello! I am 4th-grade student backend developer specializing in Python/Django development.<br>
+            I am familiar with collaboration through the internship and team project experience with Git and Notion.<br>
+            Use Python and C++ as my primary language and usually participated in data analysis and web development.
+        </div>
+    </section>
+
+
+    <section id="skill" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Skill</div>
+        <div class="paragraph">
+            <ul>
+                <li><b>Language:</b> <span>C++</span>, <span>Python3</span>, Java, JavaScript, HTML, CSS</li>
+                <li><b>Framework:</b> <span>Django</span>, Django REST Framework, Flask, Bootstrap</li>
+                <!-- <li><b>Authentication:</b> Django-allauth, OAuth</li> -->
+                <li><b>Server/Networking:</b> Nginx, Gunicorn, Apache Tomcat, PHP</li>
+                <li><b>Database:</b> <span>MySQL</span>/MariaDB, SQLite</li>
+                <li><b>Version Control:</b> Git, GitHub</li>
+                <li><b>Automation:</b> Docker, Docker-compose</li>
+                <li><b>Cloud Service:</b> Amazon Web Services, Heroku, Naver Cloud Platform</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="experience" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Experience</div>
+        <div class="paragraph">
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+                <div class="stitle">Slicon Valley Internship Program</div>
+                <div class="date">
+                    Jun, 2022 - Jul, 2022
+                    &nbsp;|&nbsp;
+                    Backend developer
+                    &nbsp;|&nbsp;
+                    Full-time Intern
+                    &nbsp;|&nbsp;
+                    Seoul, South Korea(hybrid)
+                </div>
+                <ul>
+                    <li>Experience with all stages of the development cycle.</li>
+                    <li>Design structure of the API in Django backend server.</li>
+                    <li>Work with a team of 2 backend developers and implement GET playlists and GET one playlist API.
+                    </li>
+                    <li>Apply the AI model and React frontend project to the Django backend server.</li>
+                    <li>Connect Django, MySQL, Nginx, and React via docker-compose and deploy to AWS EC2.</li>
+                </ul>
+                <div class="techstack">Python, Django, Django rest framework, MySQL, gunicorn, Nginx, Docker, Git, AWS
+                </div>
+                <a class="url" href="https://github.com/Silicon-Valley-Team-A/server">Project: Recomade</a>
+            </div>
+
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+                <div class="stitle">Flug Mediaworks</div>
+                <div class="date">
+                    Jul, 2021
+                    &nbsp;|&nbsp;
+                    Web developer
+                    &nbsp;|&nbsp;
+                    Full-time Intern
+                    &nbsp;|&nbsp;
+                    Cheongju, South Korea
+                </div>
+                <ul>
+                    <li>Implement a web page including PHP/JavaScript backend and HTML/CSS frontend based on a designed
+                        draft.</li>
+                    <li>Translate the Korean website to English and apply it to the English version with a session.</li>
+                    <li>Read and applied the modification requirements of an existed website.</li>
+                </ul>
+                <div class="techstack">PHP, Javascript, Gnuboard, MySQL, HTML, CSS</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="project" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Project</div>
+        <div class="paragraph">
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" data-aos-duration="1500">
+                <div class="stitle">LUNAR AI</div>
+                <div class="date">
+                    May, 2021 - Dec, 2021
+                    &nbsp;|&nbsp;
+                    Backend developer & Database developer
+                    &nbsp;|&nbsp;
+                    Start-up Acceleration | Open Source SW | CBNU AI club: COSMIC
+                </div>
+                <ul>
+                    <li>AI-based intelligent surveillance system.</li>
+                    <li>Develop POST face detection API and GET detection result API.</li>
+                    <li>Design and manage all data including face detection and user with MySQL.</li>
+                </ul>
+                <div class="techstack">Python, Django, MySQL</div>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
+                data-aos-duration="1500">
+                <div class="stitle">Analysis of Solar Power Prediction with Data-Driven Approaches</div>
+                <div class="date">
+                    May, 2021 - Oct, 2021
+                    &nbsp;|&nbsp;
+                    Data analysist
+                    &nbsp;|&nbsp;
+                    Global Joint Project | 4 members | 2 mentors
+                </div>
+                <!-- <ul>
+                    <li>ARIMA 모델을 이용하여 태양열 발전량을 예측함.</li>
+                    <li>오차를 줄이기 위해 order, 데이터셋, 기간을 조정함.</li>
+                    <li>격주에 한 번씩 진행 사항과 최상 예측값을 발표하고 피드백을 받음.</li>
+                </ul> -->
+                <ul>
+                    <li>Predict solar power generation with ARIMA model.</li>
+                    <li>Adjust order, dataset, and duration to reduce error.</li>
+                    <li>Make a presentation of the progress and best forecasts and get feedback every other week.</li>
+                </ul>
+                <div class="techstack">Python, Jupyter Notebook, Pandas</div>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" data-aos-duration="1500">
+                <a class="stitle pytitle" href="https://github.com/CBNULikelion9th/ConcertMeet">ConcertMeet</a>
+                <div class="date">
+                    Jun, 2021 - Aug, 2021
+                    &nbsp;|&nbsp;
+                    Backend developer
+                    &nbsp;|&nbsp;
+                    Likelion Hackaton | 4 members
+                </div>
+                <!-- <ul>
+                    <li>공연을 같이 볼 사람을 모집하는 웹사이트.</li>
+                    <li>Django Authentication을 이용하여 사용자 관리에 대한 모든 api를 구현함.</li>
+                    <li>참가자 추가/삭제, 팔로우/언팔로우 및 자신의 팔로잉/팔로워 조회 기능을 구현함.</li>
+                    <li>완성한 프로젝트를 heroku에 배포함.</li>
+                </ul> -->
+                <ul>
+                    <li>A website that finds people to watch the performance.</li>
+                    <li>Implement all about user management APIs using Django Authentication.</li>
+                    <li>Implement add/delete participants, follow/unfollow, and look up their own following/followers API.</li>
+                    <li>Deploy completed project to heroku.</li>
+                </ul>
+                <div class="techstack">Python, Django, HTML, CSS, Javascript, Bootstrap, Git</div>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" data-aos-duration="1500">
+                <a class="stitle pytitle" href="https://github.com/2021Page/Luminous_demo">Luminous</a>
+                <div class="date">
+                    May, 2021 - Dec, 2021
+                    &nbsp;|&nbsp;
+                    Backend developer
+                    &nbsp;|&nbsp;
+                    Term project of Open Source Web SW & Database Systems | 3 members</span>
+                </div>
+                <!-- <ul>
+                    <li>네일 & 패디를 판매하는 웹 쇼핑몰.</li>
+                    <li>백엔드 API 전체 구현: 메인, 회원 관리, 장바구니, 관심상품, 상세정보, 주문내역, 포인트 & 쿠폰.</li>
+                    <li>서버 & 데이터베이스 구축.</li>
+                    <li>데이터베이스를 SQLite에서 MySQL로 이전(2021.10).</li>
+                </ul> -->
+                <ul>
+                    <li>A web store that sells nail and pedi items.</li>
+                    <li>Implement all of back-end API: main page, user management, cart, interested product, detail, order, point and coupon.</li>
+                    <li>Set up server & database deployment.</li>
+                    <li>Transfer database from SQLite to MySQL(2021.10).</li>
+                </ul>
+                <div class="techstack">HTML, CSS, Javascript, Bootstrap, Python, Django, MySQL, SQLite, Git</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="side" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Side Project</div>
+        <div class="paragraph">
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" data-aos-duration="1500">
+                <a class="stitle">Heavy talkers</a>
+                <div class="date">
+                    Sep, 2022 - Now
+                    &nbsp;|&nbsp;
+                    Full stack
+                    &nbsp;|&nbsp;
+                    2 members
+                </div>
+                <ul>
+                    <li>A friendly website for the April fool's day event for my friends.</li>
+                    <li><span style="color: rgb(207, 76, 74)">Now processing...</span></li>
+                </ul>
+                <div class="techstack">Python, Flask</div>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" data-aos-duration="1500">
+                <a class="stitle pytitle" href="https://hgyuhyeon.github.io">Portfolio</a>
+                <div class="date">
+                    Jan, 2021 - Now
+                </div>
+                <!-- <ul>
+                    <li>그동안의 활동 정리 및 기록을 위해 제작.</li>
+                    <li>html, css의 사용법과 코드 읽는 법을 익힘.</li>
+                </ul> -->
+                <ul>
+                    <li>Create for organizing and recording activities so far.</li>
+                    <li>Learn how to read and use html, css.</li>
+                </ul>
+                <div class="techstack">HTML, CSS, Javascript, Bootstrap(used before 2022.09)</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Education</div>
+        <div class="paragraph">
+            <!-- <div class="stitle">Angelo State University</div>
+            <p>Computer Science | 교환학생 | 2022.01 - 2022.05</p>
+            <div class="stitle">충북대학교</div>
+            <p>소프트웨어공학과 | GPA 3.72/4.5 | 2019 - 현재</p>
+            <div class="stitle">충북대학교 사범대학 부설고등학교</div>
+            <p>졸업 | 2016 - 2018</p> -->
+            <div class="stitle">Angelo State University</div>
+            <p>Computer Science | Study Abroad | 2022.01 - 2022.05</p>
+            <div class="stitle">Chungbuk National University</div>
+            <p>Department of Computer Science | GPA 3.72/4.5 | 2019 - Present</p>
+            <div class="stitle">Chungbuk National University high school</div>
+            <p>Graduated | 2016 - 2018 </p>
+        </div>
+    </section>
+
+
+    <section id="award" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Award</div>
+        <div class="paragraph">
+            <!-- <div class="award">
+                <div class="award-left">우수(2등상)</div>
+                <div class="award-right"> 오픈소스SW <span>2021</span></div>
+            </div>
+            <div class="award">
+                <div class="award-left">참가</div>
+                <div class="award-right"> 멋쟁이 사자처럼 해커톤 <span>2021</span></div>
+            </div> -->
+            <div class="award">
+                <div class="award-left">Excellence prize(2nd)</div>
+                <div class="award-right"> Open Source SW <span>2021</span></div>
+            </div>
+            <div class="award">
+                <div class="award-left">Participated</div>
+                <div class="award-right"> LikeLion Hackaton <span>2021</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Certificate</div>
+        <div class="paragraph">
+            <div class="stitle">TOPCIT</div>
+            <p>380<span class="date"> 2021.06</span></p>
+            <!-- 정보처리기사(2023! 2022 하반기 공부 시작)<br> -->
+        </div>
+    </section>
+
+
+    <section id="language" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Language</div>
+        <div class="paragraph">
+            <div class="stitle">English</div>
+            <ul>
+                <li>B2</li>
+                <li>TOEIC 840<span class="date"> 2021.01</span></li>
+            </ul>
+            <!-- IELTS(2022) -->
+            <div class="stitle">Japanese</div>
+            <ul>
+                <li>A2</li>
+            </ul>
+            <!-- JLPT(2023) -->
+        </div>
+    </section>
+
+
+    <section id="contact" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Contact</div>
+        <div class="paragraph">
+            <p>I'm open to work and actively looking for a job! I also welcome a simple message like "Hi" Send me if
+                there's any question.</p>
+            <br>
+            <a href="mailto:hwgyuhyeon@gmail.com">Say Hi</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Copyright 2020. GYUHYEON HWANG all rights reserved.</p>
+    </footer>
+
+    
+    <!-- js -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>AOS.init();</script>
+    <script src="static/js/navbar.js"></script>
+</body>
+
+</html>
