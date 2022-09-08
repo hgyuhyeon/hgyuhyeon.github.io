@@ -14,9 +14,12 @@ font-family: 'Noto Serif KR', serif;
     --pink: #d1a1a1;
     --purple: #827397;
     --light-grey-blue: #9BA4B4;
-    --light-grey: #989898;
+    --light-grey: #ababab;
     --grey: #646464;
     --white: #F1F6F9;
+
+    --header-top: 3vw;
+    --header-side: 10vw;
 }
 
 html, body {height: 100%;}
@@ -26,9 +29,9 @@ body {margin: 0; padding: 0; display: flex; flex-direction: column; background-c
 
 header {width: 100%; display: flex; justify-content: space-between;}
 header a {color: var(--light-blue); font-size: 15px;}
-header .logo {padding: 3vw 0 3vw 10vw;}
+header .logo {padding: var(--header-top) 0 3vw var(--header-side);}
 header .logo a {font-size: 25px;}
-header .toggle {display: none; position: absolute; right: 10vw; top: 3vw; border: none; background-color: transparent; color: var(--light-blue);}
+header .toggle {display: none; position: absolute; right: var(--header-side); top: var(--header-top); border: none; background-color: transparent; color: var(--light-blue);}
 nav {padding: 3vw 0; display: flex; flex-direction: row; padding-right: 5vw;}
 nav ol {margin: auto;}
 nav a {color: white; font-size: 15px; transition: all 0.5s ease-out 0.05s; text-decoration: none;}
@@ -52,7 +55,7 @@ section {padding: 7vw 10vw 3vw;}
 .paragraph li::marker {color: var(--greyish-light-blue);}
 .paragraph p {margin: 0;}
 
-.title { color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue); padding-top: 40px;}
+.title { color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
 .stitle {color: var(--greyish-light-blue); font-size: 19px;}
 
 .pytitle {text-decoration: none;}
@@ -113,6 +116,7 @@ footer p {font-size: 8px;}
     .stitle {font-size: 14px;}
 
     .paragraph {font-size: 12px;}
+    .date, .techstack, .url, .url:hover {line-height: 1.5em;}
     .date, .techstack, .url, .url:hover, .award-right span {font-size: 8px;}
 
     footer p {font-size: 6px;}
