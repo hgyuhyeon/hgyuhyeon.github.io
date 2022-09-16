@@ -61,7 +61,7 @@ section {padding: 7vw 10vw 3vw;}
 .pytitle {text-decoration: none;}
 .pytitle:hover {text-decoration: none; color: var(--purple);}
 
-.date {color: var(--blue); font-size: 12px;}
+.date {color: var(--blue); font-size: 12px; line-height: 1.5em;}
 
 .award {display: flex; padding: 3px 0;}
 .award-left {color: var(--greyish-light-blue); flex: 0.3; text-align: right; padding-right: 3px;}
@@ -78,6 +78,7 @@ section {padding: 7vw 10vw 3vw;}
 #experience .paragraph {display: flex; flex-direction: column;}
 #experience .paragraph .container, #project .paragraph .container, #side .paragraph .container {padding-bottom: 2vw;}
 
+#education p ,
 #language ul {margin: 0 auto 10px;}
 
 #contact div:last-child {text-align: center;}
@@ -116,7 +117,7 @@ footer p {font-size: 8px;}
     .stitle {font-size: 14px;}
 
     .paragraph {font-size: 12px;}
-    .date, .techstack, .url, .url:hover {line-height: 1.5em;}
+    .techstack, .url, .url:hover {line-height: 1.5em;}
     .date, .techstack, .url, .url:hover, .award-right span {font-size: 8px;}
 
     footer p {font-size: 6px;}
