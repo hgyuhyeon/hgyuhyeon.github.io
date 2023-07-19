@@ -51,6 +51,7 @@ section {padding: 7vw 10vw 3vw;}
 
 .paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 3vw 2vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
 .paragraph ul {padding-left: 17px; margin: 0;}
+.paragraph ul a {text-decoration: none; color: var(--light-grey);}
 .paragraph li {list-style: square;}
 .paragraph li::marker {color: var(--greyish-light-blue);}
 .paragraph p {margin: 0;}
@@ -63,10 +64,11 @@ section {padding: 7vw 10vw 3vw;}
 
 .date {color: var(--blue); font-size: 12px; line-height: 1.5em;}
 
-.award {display: flex; padding: 3px 0;}
-.award-left {color: var(--greyish-light-blue); flex: 0.3; text-align: right; padding-right: 3px;}
-.award-right {flex: 0.7; text-align: left; padding-left: 3px;}
-.award-right span {color: var(--grey); font-size: 13px;}
+.award {display: flex; padding: 3px 0; }
+.award-left {color: var(--greyish-light-blue); flex: 0.3; text-align: right; padding-right: 1vw; font-size: 19px;}
+.award-left:hover {color: var(--purple);}
+.award-right {flex: 0.7; text-align: left; padding-left: 1vw; font-size: 15px;}
+.award-right span {color: var(--grey); font-size: 12px;}
 
 .techstack {font-size: 13px; color: var(--pink);}
 
