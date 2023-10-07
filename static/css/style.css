@@ -43,8 +43,8 @@ main h3 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height:
 main h1 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 50px;}
 
 main .message {font-size: 20px; color: var(--light-grey-blue);}
-main .info {font-size: 20px; color: var(--light-blue);}
-main .info a, main .info a:hover {color: var(--light-blue); padding-right: 5px; text-decoration: none;}
+main .info {font-size: 20px; color: var(--blue);}
+main .info a, main .info a:hover {color: var(--blue); padding-right: 5px; text-decoration: none;}
 
 
 section {padding: 7vw 10vw 3vw;}
