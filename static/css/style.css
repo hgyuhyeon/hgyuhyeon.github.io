@@ -27,11 +27,8 @@ html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color)}
 
 
-header {width: 100%; display: flex; justify-content: space-between;}
+header {width: 100%; display: flex; justify-content: flex-end;}
 header a {color: var(--light-blue); font-size: 15px;}
-header .logo {padding: var(--header-top) 0 3vw var(--header-side);}
-header .logo a {font-size: 25px;}
-header .toggle {display: none; position: absolute; right: var(--header-side); top: var(--header-top); border: none; background-color: transparent; color: var(--light-blue);}
 nav {padding: 3vw 0; display: flex; flex-direction: row; padding-right: 5vw;}
 nav ol {margin: auto;}
 nav a {color: white; font-size: 15px; transition: all 0.5s ease-out 0.05s; text-decoration: none;}
