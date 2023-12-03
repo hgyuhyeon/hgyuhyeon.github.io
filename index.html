@@ -27,25 +27,10 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ol><a href="https://hgyuhyeon.github.io">Home</a></ol>
-            <ol><a href="https://hgyuhyeon.github.io/about">About</a></ol>
-            <ol><a href="https://hgyuhyeon.github.io#experience">Experience</a></ol>
-            <ol><a href="https://hgyuhyeon.github.io#project">Project</a></ol>
-            <ol><a href="https://hgyuhyeon.github.io/resume.pdf">Resume</a></ol>
-            <ol><a href="https://hgyuhyeon.github.io#contact">Contact</a></ol>
-        </nav>
-    </header>
-
-
     <main data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
-        <div class="name">
-            <h3>&nbsp;</h3>
-            <h1>Gyuhyeon Hwang</h1>
-        </div>
+        <h2>Gyuhyeon Hwang</h2>
 
-        <p class="message">A junior software developer specializing in Django/Python server-side development.</p>
+        <h4 class="message">A junior software developer specializing in server-side development.</h4>
 
         <p class="info">
             <a href="mailto:hwgyuhyeon@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -56,26 +41,40 @@
     </main>
 
 
+    <section id="skill" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Skill</div>
+        <div class="paragraph">
+            <ul>
+                <li><span>C++</span>, <span>Python3</span>, C#</li>
+                <li><span>Django</span>, Django REST Framework, Flask</li>
+                <li>Nginx, Gunicorn, PHP</li>
+                <li><span>MySQL</span>/MariaDB, Firebase</li>
+                <li>Git, GitHub</li>
+                <li>Docker, Docker-compose</li>
+                <li>Amazon Web Services, Heroku, Vercel</li>
+            </ul>
+        </div>
+    </section>
+
+
     <section id="experience" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
         <div class="title">Experience</div>
         <div class="paragraph">
             <div id="headstart" class="container" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
                 <div class="stitle">Headstart SV</div>
                 <div class="date">
+                    Internship
+                    &nbsp;|&nbsp;
                     Jun, 2022 - Jul, 2022
-                    &nbsp;|&nbsp;
-                    Software developer
-                    &nbsp;|&nbsp;
-                    Internship program participant
                     &nbsp;|&nbsp;
                     Seoul, South Korea(Hybrid)
                 </div>
                 <ul>
-                    <li>Worked as a Django/Python developer.</li>
-                    <li>Build and deploy the project server via AWS and docker.</li>
-                    <li>Design, implement, and test API through Django/Python.</li>
-                    <li>Combine AI model and React web project made by other teams to the Django server.</li>
-                    <li>Manage and finalize the team project.</li>
+                    <li>Worked as a Django/Python developer intern.</li>
+                    <li>Built and deployed the project server via AWS and docker.</li>
+                    <li>Designed, implemented, and tested API through Django/Python.</li>
+                    <li>Combined AI model and React web project made by other teams to the Django server.</li>
+                    <li>Managed and finalized the team project.</li>
                 </ul>
                 <div class="techstack">Python, Django, Django rest framework, MySQL, gunicorn, Nginx, Docker, Git, AWS</div>
             </div>
@@ -83,19 +82,17 @@
             <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
                 <div class="stitle">Flug Mediaworks</div>
                 <div class="date">
+                    Internship
+                    &nbsp;|&nbsp;
                     Jul, 2021
-                    &nbsp;|&nbsp;
-                    Web developer
-                    &nbsp;|&nbsp;
-                    Full-time Intern
                     &nbsp;|&nbsp;
                     Cheongju, South Korea
                 </div>
                 <ul>
-                    <li>Worked as a full-stack PHP/JavaScript developer.</li>
-                    <li>Implement web pages both front-end (HTML/CSS) and back-end (PHP/JavaScript).</li>
-                    <li>Translate the Korean web pages to English and implement an English version.</li>
-                    <li>Fix errors & problems of the web pages on service.</li>
+                    <li>Worked as a full-stack PHP/JavaScript developer intern.</li>
+                    <li>Implemented web pages both front-end (HTML/CSS) and back-end (PHP/JavaScript).</li>
+                    <li>Translated the Korean web page to English and implemented an English version of it.</li>
+                    <li>Fixed errors & problems of the web pages on service.</li>
                 </ul>
                 <div class="techstack">PHP, JavaScript, Gnuboard, MySQL, HTML, CSS</div>
             </div>
@@ -105,6 +102,24 @@
     <section id="project" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
         <div class="title">Project</div>
         <div class="paragraph">
+            <!-- <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
+                data-aos-duration="1500">
+                <a class="stitle">Laboratory H</a>
+                <div class="date">
+                    Dec, 2023 - Now
+                    &nbsp;|&nbsp;
+                    2 members
+                </div>
+                <ul>
+                    <li>A website that provides various features: Kakaotalk conversation analysis, Time capsule letter, etc.</li>
+                    <li>Pre-processed of about 1 million lines of data and create a SQL table using Pandas.</li>
+                    <li>Improved serurity by adding password hashing using bcrypt.</li>
+                    <li>Developed a time capsule letter system with Flask.</li>
+                    <li><span style="color: rgb(207, 76, 74)">Now processing...</span></li>
+                </ul>
+                <div class="techstack">Python, Flask</div>
+            </div> -->
+
             <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
                 data-aos-duration="1500">
                 <div class="stitle">Picaxer</div>
@@ -116,9 +131,9 @@
                     Graduation project | 3 members
                 </div>
                 <ul>
-                    <li>A pixel art editor that can draw, share, and apply pixel arts in our games.</li>
-                    <li>Design and implement database and connect to the unity project.</li>
-                    <li>Develop user & community services API.</li>
+                    <li>A pixel art editor that can draw pixel arts and share them.</li>
+                    <li>Designed and implement database and connected to the unity project.</li>
+                    <li>Developed user & community services API.</li>
                 </ul>
                 <div class="techstack">C#, Firebase Auth & Realtime database, Unity</div>
                 
@@ -137,9 +152,9 @@
                 <ul>
                     <li>A website that recommends music according to the atmosphere of the photo.</li>
                     <li>Worked as a Python server developer.</li>
-                    <li>Design, implement, and test API through Django/Python.</li>
-                    <li>Combine AI model and React web project made by other teams to the Django server.</li>
-                    <li>Containerize Django, MySQL, Nginx, and React via docker-compose and deploy to AWS EC2.</li> 
+                    <li>Designed, implemented, and tested API through Django/Python.</li>
+                    <li>Combined AI model and React web project made by other teams to the Django server.</li>
+                    <li>Containerized Django, MySQL, Nginx, and React via docker-compose and deploy to AWS EC2.</li> 
                 </ul>
                 <div class="techstack">Python, Django, MySQL</div>
                 
@@ -158,8 +173,8 @@
                 <ul>
                     <li>Worked as a server developer on CBNU AI club: COSMIC</li>
                     <li>AI-based intelligent surveillance system.</li>
-                    <li>Develop POST face detection API and GET detection result API.</li>
-                    <li>Design and manage all data including face detection and user with MySQL.</li>
+                    <li>Developed POST face detection API and GET detection result API.</li>
+                    <li>Designed and managed all data including face detection and user with MySQL.</li>
                 </ul>
                 <div class="techstack">Python, Django, MySQL</div>
             </div>
@@ -175,8 +190,8 @@
                     Global Joint Project | 4 members | 2 mentors
                 </div>
                 <ul>
-                    <li>Predict solar power generation with ARIMA model.</li>
-                    <li>Make the best forecast and a presentation of the progress every other week.</li>
+                    <li>Predicted solar power generation with ARIMA model.</li>
+                    <li>Made the best forecast and presentated of the progress every other week.</li>
                 </ul>
                 <div class="techstack">Python, Jupyter Notebook, Pandas</div>
             </div>
@@ -194,8 +209,8 @@
                 <ul>
                     <li>Worked as a server developer and manage to deploy.</li>
                     <li>A website that finds people to watch the performance together.</li>
-                    <li>Develop API using Django & Django Auth.</li>
-                    <li>Combine and finalize project and deploy to Heroku.</li>
+                    <li>Developed API using Django & Django Auth.</li>
+                    <li>Combined and finalized project and deploy to Heroku.</li>
                 </ul>
                 <div class="techstack">Python, Django, HTML, CSS, JavaScript, Bootstrap, Git, Heroku</div>
             </div>
@@ -211,79 +226,14 @@
                     Term project of Open Source Web SW & Database Systems | 3 members</span>
                 </div>
                 <ul>
-                    <li>Work as a server developer.</li>
+                    <li>Worked as a server developer.</li>
                     <li>A web store that sells nail and pedi items.</li>
-                    <li>Implement APIs: main page, user management, cart, interested product, detail,
+                    <li>Implemented basic features: main page, user management, cart, interested product, detail,
                         order, point and coupon.</li>
                     <li>Set up server & database deployment.</li>
-                    <li>Transfer database from SQLite to MySQL(2021.10).</li>
+                    <li>Transfered database from SQLite to MySQL(2021.10).</li>
                 </ul>
                 <div class="techstack">HTML, CSS, JavaScript, Bootstrap, Python, Django, MySQL, SQLite, Git</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="side" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
-        <div class="title">Side Project</div>
-        <div class="paragraph">
-            <!-- <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
-                data-aos-duration="1500">
-                <a class="stitle">Laboratory H</a>
-                <div class="date">
-                    Sep, 2022 - Now
-                    &nbsp;|&nbsp;
-                    2 members
-                </div>
-                <ul>
-                    <li>A website that provides various features: Kakaotalk conversation analysis, Time capsule letter, etc.</li>
-                    <li>Pre-processed of about 1 million lines of data and create a SQL table using Pandas.</li>
-                    <li>Improved serurity by adding password hashing using bcrypt.</li>
-                    <li>Developed a time capsule letter system with Flask.</li>
-                    <li><span style="color: rgb(207, 76, 74)">Now processing...</span></li>
-                </ul>
-                <div class="techstack">Python, Flask</div>
-            </div> -->
-
-            <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
-                data-aos-duration="1500">
-                <a class="stitle pytitle" href="https://hgyuhyeon.github.io">Portfolio</a>
-                <div class="date">
-                    Jan, 2021 - Now
-                </div>
-                <ul>
-                    <li>Create for organizing and recording activities so far.</li>
-                    <li>Learn how to read and use html, css.</li>
-                </ul>
-                <div class="techstack">HTML, CSS, JavaScript</div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- <section id="skill" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
-        <div class="title">Skill</div>
-        <div class="paragraph">
-            <ul>
-                <li><b>Language:</b> <span>C++</span>, <span>Python3</span>, Java, JavaScript, HTML, CSS</li>
-                <li><b>Framework:</b> <span>Django</span>, Django REST Framework, Flask, Bootstrap</li>
-                <li><b>Authentication:</b> </li>
-                <li><b>Server/Networking:</b> Nginx, Gunicorn, Apache Tomcat, PHP</li>
-                <li><b>Database:</b> <span>MySQL</span>/MariaDB, SQLite</li>
-                <li><b>Version Control:</b> Git, GitHub</li>
-                <li><b>Automation:</b> Docker, Docker-compose</li>
-                <li><b>Cloud Service:</b> Amazon Web Services, Heroku, Naver Cloud Platform</li>
-            </ul>
-        </div>
-    </section> -->
-
-
-    <section id="award" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
-        <div class="title">Honors and Awards</div>
-        <div class="paragraph">
-            <p></p>
-            <div class="award">
-                <a class="award-left" href="deanslist.pdf">Dean's list</a>
-                <div class="award-right"> Angelo State University <span>Spring 2022</span></div>
             </div>
         </div>
     </section>
@@ -293,7 +243,7 @@
         <div class="title">Education</div>
         <div class="paragraph">
             <div class="stitle">Chungbuk National University</div>
-            <p>Department of Computer Science | GPA 3.78/4.5 | 2019.03 - 2024.02(Expected)</p>
+            <p>Department of Computer Science | GPA 3.78/4.5 | 2019.03 - 2024.02</p>
             <div class="stitle">Angelo State University</div>
             <p>Computer Science | Study Abroad | 2022.01 - 2022.05</p>
         </div>
@@ -318,16 +268,19 @@
             <ul>
                 <li>TOEIC 945<span class="date"> 2023.07</span></li>
             </ul>
+            <div class="stitle">Korean<span class="date"> Native</span></div>
         </div>
     </section>
 
 
-    <section id="contact" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
-        <div class="title">Contact</div>
+    <section id="award" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="title">Honors and Awards</div>
         <div class="paragraph">
-            <p>I'm open to work and actively looking for a job! Send me if there's any question.</p>
-            <br>
-            <a href="mailto:hwgyuhyeon@gmail.com">Say Hi</a>
+            <p></p>
+            <div class="award">
+                <a class="award-left" href="deanslist.pdf">Dean's list</a>
+                <div class="award-right"> Angelo State University <span>Spring 2022</span></div>
+            </div>
         </div>
     </section>
 

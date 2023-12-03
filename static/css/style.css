@@ -7,7 +7,7 @@ font-family: 'Noto Serif KR', serif;
 :root {
     --bg-color: #282c35;
     --dark-navy: #1c273c;
-    --blue: #566378;
+    --blue: #717c90;
     --light-blue: #b3c8da;
     --light-blue-url: #7db4b9;
     --greyish-light-blue: #93a3b1;
@@ -27,24 +27,16 @@ html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color)}
 
 
-header {width: 100%; display: flex; justify-content: flex-end;}
-header a {color: var(--light-blue); font-size: 15px;}
-nav {padding: 3vw 0; display: flex; flex-direction: row; padding-right: 5vw;}
-nav ol {margin: auto;}
-nav a {color: white; font-size: 15px; transition: all 0.5s ease-out 0.05s; text-decoration: none;}
-nav a:hover {color: var(--light-blue); transition: all 0.5s ease-out 0.05s; text-decoration: none;}
-
-main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw; flex: 1; min-height: 100vh;}
-main .name {margin: 3vw 0 2vw;}
+main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw; flex: 1; min-height: 10vh;}
 main h3 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.5em; font-size: 30px;}
-main h1 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 50px;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 50px;}
 
-main .message {font-size: 20px; color: var(--light-grey-blue);}
+main .message {color: var(--light-grey-blue);}
 main .info {font-size: 20px; color: var(--blue);}
 main .info a, main .info a:hover {color: var(--blue); padding-right: 5px; text-decoration: none;}
 
 
-section {padding: 7vw 10vw 3vw;}
+section {padding: 7vw 15vw 1vw;}
 
 .paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 3vw 2vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
 .paragraph ul {padding-left: 17px; margin: 0;}
