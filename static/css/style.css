@@ -27,16 +27,15 @@ html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color)}
 
 
-main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw; flex: 1; min-height: 10vh;}
-main h3 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.5em; font-size: 30px;}
-main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 50px;}
+main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw 3vw; flex: 1;}
+main h4 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 2.4em; font-size: 18px;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 40px;}
 
-main .message {color: var(--light-grey-blue);}
-main .info {font-size: 20px; color: var(--blue);}
+main .info {font-size: 16px; color: var(--blue);}
 main .info a, main .info a:hover {color: var(--blue); padding-right: 5px; text-decoration: none;}
 
 
-section {padding: 7vw 15vw 1vw;}
+section {padding: 4vw 15vw;}
 
 .paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 3vw 2vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
 .paragraph ul {padding-left: 17px; margin: 0;}
@@ -45,7 +44,7 @@ section {padding: 7vw 15vw 1vw;}
 .paragraph li::marker {color: var(--greyish-light-blue);}
 .paragraph p {margin: 0;}
 
-.title { color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
+.title {color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
 .stitle {color: var(--greyish-light-blue); font-size: 19px;}
 
 .pytitle {text-decoration: none;}
@@ -53,10 +52,10 @@ section {padding: 7vw 15vw 1vw;}
 
 .date {color: var(--blue); font-size: 12px; line-height: 1.5em;}
 
-.award {display: flex; padding: 3px 0; }
-.award-left {color: var(--greyish-light-blue); flex: 0.3; text-align: right; padding-right: 1vw; font-size: 19px;}
+.award {display: flex; padding: 3px 0;}
+.award-left {flex: 0.3; text-align: right; padding-right: 1vw;}
 .award-left:hover {color: var(--purple);}
-.award-right {flex: 0.7; text-align: left; padding-left: 1vw; font-size: 15px;}
+.award-right {flex: 0.7; text-align: left; padding-left: 1vw;}
 .award-right span {color: var(--grey); font-size: 12px;}
 
 .techstack {font-size: 13px; color: var(--pink);}
@@ -69,47 +68,30 @@ section {padding: 7vw 15vw 1vw;}
 #experience .paragraph {display: flex; flex-direction: column;}
 #experience .paragraph .container, #project .paragraph .container, #side .paragraph .container {padding-bottom: 2vw;}
 
-#education p ,
-#language ul {margin: 0 auto 10px;}
-
-#contact div:last-child {text-align: center;}
-#contact a {padding: 8px 15px; border: solid 1px var(--light-blue-url); border-radius: 10px; color: var(--white); font-size: 14px;}
-#contact a:hover {background-color: var(--light-blue-url); transition: all 0.5s ease-out 0.05s;}
-
+#education p,
+#language ul {margin: 0 auto 5px;}
 
 footer {color: var(--light-blue); font-family: 'Hahmlet', serif; text-align: center;}
-footer p {font-size: 8px;}
+footer p {font-size: 7px;}
 
 
-@media screen and (max-width: 1000px) { /* for ipad */
-    .award-left {flex: 0.5;}
-    .award-right {flex: 1;}
-}
+@media screen and (max-width: 700px) {
+    main {margin: 5vw 10vw 3vw;}
+    main h4 {font-size: 13px;}
+    main h2 {font-size: 18px;}
+    main .info {font-size: 11px;}
 
-@media screen and (max-width: 700px) { /* for iphone */
-    header {display: block;}
-    header .logo {padding-left: 5vw; padding-bottom: 0;}
-    header .logo a {font-size: 15px;}
-    header .toggle {display: block; right: 5vw;}
+    section {padding: 5vw 10vw;}
 
-    nav.active {display: flex;}
-    nav {flex-direction: column; display: none; margin-top: 3vw; padding: 1vw 0;}
-    nav ol {text-align: center; padding: 0;}
-    nav a {font-size: 10px;}
+    .title {font-size: 15px;}
+    .stitle {font-size: 13px;}
 
-    main {min-height: 50vh; margin: 50vw 15vw;}
-    main h3 {font-size: 23px;}
-    main h1 {font-size: 30px;}
-    main .message, main .info {font-size: 15px;}
-
-    section {padding: 20vw 10vw;}
-
-    .title {font-size: 18px;}
-    .stitle {font-size: 14px;}
-
-    .paragraph {font-size: 12px;}
+    .paragraph {font-size: 11px;}
     .techstack, .url, .url:hover {line-height: 1.5em;}
     .date, .techstack, .url, .url:hover, .award-right span {font-size: 8px;}
+
+    .award-left {flex: 0.5;}
+    .award-right {flex: 1;}
 
     footer p {font-size: 6px;}
 }
