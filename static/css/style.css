@@ -5,78 +5,69 @@ font-family: 'Noto Serif KR', serif;
 */
 
 :root {
-    --bg-color: #282c35;
-    --dark-navy: #1c273c;
+    --bg-color: #2a2d30;
+    --dark-navy: #172949;
+    --navy: #1F3864;
     --blue: #717c90;
     --light-blue: #b3c8da;
-    --light-blue-url: #7db4b9;
-    --greyish-light-blue: #93a3b1;
+    --greyish-light-blue: #85939f;
     --pink: #d1a1a1;
     --purple: #827397;
-    --light-grey-blue: #9BA4B4;
-    --light-grey: #ababab;
+    --light-grey: #c1c1c1;
     --grey: #646464;
     --white: #F1F6F9;
-
-    --header-top: 3vw;
-    --header-side: 10vw;
 }
 
 html, body {height: 100%;}
 html {scroll-behavior: smooth; overflow-y: scroll;}
-body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color)}
+body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color);}
 
 
-main {font-family: 'Noto Serif KR', serif; margin: 4vw 15vw 3vw; flex: 1;}
+main {font-family: 'Noto Serif KR', serif; padding: 4vw 10vw 3vw; flex: 1;}
 main h4 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 2.4em; font-size: 18px;}
 main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 40px;}
 
 main .info {font-size: 16px; color: var(--blue);}
 main .info a, main .info a:hover {color: var(--blue); padding-right: 5px; text-decoration: none;}
 
+section {padding: 3vw 10vw 8vw;}
 
-section {padding: 4vw 15vw;}
-
-.paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 3vw 2vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
+.paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 1vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
 .paragraph ul {padding-left: 17px; margin: 0;}
 .paragraph ul a {text-decoration: none; color: var(--light-grey);}
 .paragraph li {list-style: square;}
 .paragraph li::marker {color: var(--greyish-light-blue);}
 .paragraph p {margin: 0;}
 
+.container {padding-bottom: 3vw;}
+
 .title {color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
 .stitle {color: var(--greyish-light-blue); font-size: 19px;}
+.stitle span {font-size: 0.7em; color: var(--grey);}
+
+#skill span {color: var(--white)}
 
 .pytitle {text-decoration: none;}
 .pytitle:hover {text-decoration: none; color: var(--purple);}
 
-.date {color: var(--blue); font-size: 12px; line-height: 1.5em;}
+.date {color: var(--blue); font-size: 0.7em; line-height: 1.5em;}
 
 .award {display: flex; padding: 3px 0;}
 .award-left {flex: 0.3; text-align: right; padding-right: 1vw;}
 .award-left:hover {color: var(--purple);}
 .award-right {flex: 0.7; text-align: left; padding-left: 1vw;}
-.award-right span {color: var(--grey); font-size: 12px;}
+.award-right span {color: var(--grey); font-size: 0.7em;}
 
-.techstack {font-size: 13px; color: var(--pink);}
+.techstack {font-size: 0.8em; color: var(--pink);}
 
-.url, .url:hover {font-size: 13px; text-decoration: none; color: var(--purple);}
-
-#skill b {color: var(--greyish-light-blue)}
-#skill span {color: var(--white)}
-
-#experience .paragraph {display: flex; flex-direction: column;}
-#experience .paragraph .container, #project .paragraph .container, #side .paragraph .container {padding-bottom: 2vw;}
-
-#education p,
-#language ul {margin: 0 auto 5px;}
+.url, .url:hover {font-size: 1em; text-decoration: none; color: var(--purple);}
 
 footer {color: var(--light-blue); font-family: 'Hahmlet', serif; text-align: center;}
 footer p {font-size: 7px;}
 
 
 @media screen and (max-width: 700px) {
-    main {margin: 5vw 10vw 3vw;}
+    main {padding: 5vw 10vw 3vw;}
     main h4 {font-size: 13px;}
     main h2 {font-size: 18px;}
     main .info {font-size: 11px;}
@@ -87,8 +78,6 @@ footer p {font-size: 7px;}
     .stitle {font-size: 13px;}
 
     .paragraph {font-size: 11px;}
-    .techstack, .url, .url:hover {line-height: 1.5em;}
-    .date, .techstack, .url, .url:hover, .award-right span {font-size: 8px;}
 
     .award-left {flex: 0.5;}
     .award-right {flex: 1;}
