@@ -1,7 +1,6 @@
 /* fonts
 font-family: 'Hahmlet', serif;
-font-family: 'Xanh Mono', monospace;
-font-family: 'Noto Serif KR', serif;
+font-family: "Nanum Myeongjo", serif;
 */
 
 :root {
@@ -20,37 +19,42 @@ font-family: 'Noto Serif KR', serif;
 
 html, body {height: 100%;}
 html {scroll-behavior: smooth; overflow-y: scroll;}
-body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color);}
+body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--bg-color); font-family: "Nanum Myeongjo", serif; font-weight: 500;}
 
 
-main {font-family: 'Noto Serif KR', serif; padding: 4vw 10vw 3vw; flex: 1;}
+main {padding: 4vw 10vw 3vw; flex: 1;}
 main h4 {color: var(--blue); letter-spacing: 0.08em; margin: 0 4px; line-height: 2.4em; font-size: 18px;}
 main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 40px;}
 
 main .info {font-size: 16px; color: var(--blue);}
 main .info a, main .info a:hover {color: var(--blue); padding-right: 5px; text-decoration: none;}
 
-section {padding: 3vw 10vw 8vw;}
+section {padding: 2vw 10vw 3vw;}
 
-.paragraph {height: auto; font-size: 14px; text-align: left; padding: 0.6vw 1vw; line-height: 2em; color: var(--light-grey); font-family: 'Hahmlet', serif;}
+#skill span {color: var(--white)}
+
+.container {padding-bottom: 1vw;}
+
+.paragraph {font-size: 14px; text-align: left; padding: 0 1vw; line-height: 2em; color: var(--light-grey);}
 .paragraph ul {padding-left: 17px; margin: 0;}
 .paragraph ul a {text-decoration: none; color: var(--light-grey);}
 .paragraph li {list-style: square;}
 .paragraph li::marker {color: var(--greyish-light-blue);}
 .paragraph p {margin: 0;}
 
-.container {padding-bottom: 3vw;}
-
-.title {color: var(--light-blue); font-size: 25px; font-family: 'Xanh Mono', monospace; font-weight: bold; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
+.title {color: var(--light-blue); font-size: 25px; font-weight: 800; margin-bottom: 10px; border-bottom: solid 1px var(--light-blue);}
 .stitle {color: var(--greyish-light-blue); font-size: 19px;}
 .stitle span {font-size: 0.7em; color: var(--grey);}
 
-#skill span {color: var(--white)}
+.url {text-decoration: none; color: var(--blue);}
+.url:hover {text-decoration: none; color: var(--purple);}
 
-.pytitle {text-decoration: none;}
-.pytitle:hover {text-decoration: none; color: var(--purple);}
+.date {color: var(--blue); font-size: 0.8em; line-height: 1.5em;}
 
-.date {color: var(--blue); font-size: 0.7em; line-height: 1.5em;}
+.techstack {font-size: 0.9em; color: var(--pink);}
+
+.imgcontainer {display: flex; flex-direction: row; flex-wrap: wrap; padding: 1%;}
+img {width: 50%;}
 
 .award {display: flex; padding: 3px 0;}
 .award-left {flex: 0.3; text-align: right; padding-right: 1vw;}
@@ -58,11 +62,7 @@ section {padding: 3vw 10vw 8vw;}
 .award-right {flex: 0.7; text-align: left; padding-left: 1vw;}
 .award-right span {color: var(--grey); font-size: 0.7em;}
 
-.techstack {font-size: 0.8em; color: var(--pink);}
-
-.url, .url:hover {font-size: 1em; text-decoration: none; color: var(--purple);}
-
-footer {color: var(--light-blue); font-family: 'Hahmlet', serif; text-align: center;}
+footer {color: var(--light-blue); text-align: center;}
 footer p {font-size: 7px;}
 
 
