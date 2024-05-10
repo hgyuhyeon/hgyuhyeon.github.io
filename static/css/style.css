@@ -29,10 +29,10 @@ main .info a, main .info a:hover {color: var(--grey); padding-right: 5px; text-d
 
 section {padding: 2vw 10vw 3vw;}
 
-.container {padding: 0 1vw 2vw; font-size: 17px; }
+.container {padding: 0 1vw 5vh; font-size: 17px;}
 
-.title {color: var(--light-blue); font-size: 28px; font-weight: 800; margin-bottom: 1.1rem;}
-.stitle {color: var(--light-grey); font-size: 23px;}
+.title {color: var(--light-blue); font-size: 2em; font-weight: 800; margin-bottom: 1.1rem;}
+.stitle {color: var(--light-grey); font-size: 1.3em; line-height: 1.3em;}
 .stitle span {font-size: 0.9em; color: var(--blue);}
 
 .url {text-decoration: none; color: var(--blue);}
@@ -40,7 +40,7 @@ section {padding: 2vw 10vw 3vw;}
 
 .date {color: var(--grey); font-size: 0.85em; line-height: 1.2em;}
 
-.paragraph {text-align: left; line-height: 1.4em; color: var(--light-grey);}
+.paragraph {text-align: left; line-height: 1.3em; color: var(--light-grey);}
 .paragraph ul {padding-left: 1em; margin: 0;}
 .paragraph ul a {text-decoration: none; color: var(--light-grey);}
 .paragraph li {list-style: square;}
@@ -60,7 +60,7 @@ img {width: 50%;}
 .award-right {flex: 0.7; text-align: left; padding-left: 1vw;}
 .award-right span {color: var(--grey); font-size: 0.7em;}
 
-footer {color: var(--light-grey); text-align: center;}
+footer {color: var(--light-grey); text-align: center; padding-top: 10vh;}
 footer p {font-size: 7px;}
 
 
@@ -70,14 +70,7 @@ footer p {font-size: 7px;}
     main .info {font-size: 11px;}
 
     section {padding: 5vw 10vw;}
-
-    .title {font-size: 15px;}
-    .stitle {font-size: 13px;}
-
-    .paragraph {font-size: 11px;}
-
-    .award-left {flex: 0.5;}
-    .award-right {flex: 1;}
+    .container {font-size: 13px;}
 
     footer p {font-size: 6px;}
 }
