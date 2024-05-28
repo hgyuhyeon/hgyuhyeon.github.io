@@ -20,18 +20,18 @@ html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
 
 
-main {padding: 4vw 10vw 3vw; flex: 1;}
-main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 2em; font-size: clamp(20px, 7vw, 70px);}
-main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; width: 60%; font-size: 18px;}
+main {padding: 4vw 6vw 3vw; flex: 1; font-size: 20px;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 2em; font-size: 2em;}
+main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; width: 60%; font-size: 0.9em;}
 
-main .info {font-size: 16px; margin: 0 4px; line-height: 2em; color: var(--blue);}
-main .info a, main .info a:hover {color: var(--grey); padding-right: 5px; text-decoration: none;}
+main .info {font-size: 0.9em; margin: 0 4px; line-height: 2em; color: var(--blue);}
+main .info a, main .info a:hover {color: var(--grey); padding-right: 5px; text-decoration: none; font-weight: 700;}
 
 section {padding: 2vw 6vw 3vw;}
 
 .container {padding: 0 1vw 5vh; font-size: 17px;}
 
-.title {color: var(--light-blue); font-size: 2em; font-weight: 800; margin-bottom: 1.1rem;}
+.title {color: var(--light-blue); font-size: 1.8em; font-weight: 800; margin-bottom: 1.1rem;}
 .stitle {color: var(--light-grey); font-size: 1.3em; line-height: 1.3em;}
 .stitle span {font-size: 0.9em; color: var(--blue);}
 
@@ -63,14 +63,14 @@ img {width: 50%;}
 footer {color: var(--light-grey); text-align: center; padding-top: 10vh;}
 footer p {font-size: 7px;}
 
+@media screen and (max-width: 900px) {
+    img {width: 100%};
+}
 
 @media screen and (max-width: 700px) {
-    main {padding: 5vw 10vw 3vw;}
-    main h4 {font-size: 13px; width: 85%;}
-    main .info {font-size: 11px;}
+    main {padding: 5vw 4vw 3vw;}
+    main h4 {width: 85%;}
 
     section {padding: 5vw 4vw;}
     .container {font-size: 13px;}
-
-    footer p {font-size: 6px;}
 }
