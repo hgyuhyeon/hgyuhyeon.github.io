@@ -1,0 +1,55 @@
+/* fonts
+font-family: 'Hahmlet', serif;
+font-family: "Do Hyeon", sans-serif;
+*/
+
+:root {
+    --dark-navy: #2a2d30;
+    --blue: #8596b5;
+    --light-blue: #b3c8da;
+    --pink: #d1a1a1;
+    --purple: #827397;
+    --black: #111111;
+    --grey: #646464;
+    --light-grey: #c1c1c1;
+    --white: #F1F6F9;
+}
+
+html, body {height: 100%;}
+html {scroll-behavior: smooth; overflow-y: scroll;}
+body {margin: 0; padding: 0; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
+
+
+main {padding: 4vw 6vw 5vw; font-size: 1.2vw; text-align: center;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 2em; font-size: 2em;}
+main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; font-size: 0.9em;}
+
+section {padding: 2vw 10vw 3vw; font-size: 1vw; height: 100vh;}
+
+.title {color: var(--light-blue); font-size: 2.3em; font-weight: 800; margin-bottom: 1.1rem;}
+.stitle {color: var(--light-grey); font-size: 1.8em; line-height: 1.3em;}
+.stitle span {font-size: 1.3em; color: var(--blue);}
+
+.url {text-decoration: none; color: var(--blue);}
+.url:hover {text-decoration: none; color: var(--purple);}
+
+.paragraph {text-align: left; line-height: 1.3em; font-size: 1.3em; color: var(--grey);}
+.paragraph ul {padding-left: 1em; margin: 0;}
+.paragraph ul a {text-decoration: none; color: var(--light-grey);}
+.paragraph li {list-style: square; padding: 0.3em 0;}
+.paragraph li::marker {color: var(--light-grey);}
+.paragraph p {margin: 0;}
+
+.imgcontainer {display: flex; flex-direction: row; flex-wrap: wrap; padding: 1%;}
+img {width: 25%;}
+
+footer {color: var(--light-grey); text-align: center; padding-top: 10vh;}
+footer p {font-size: 1vw; margin-bottom: 0;}
+
+@media screen and (max-width: 700px) {
+    main {padding: 5vw 4vw 3vw;}
+    main h4 {width: 85%;}
+
+    section {padding: 5vw 4vw;}
+    .container {font-size: 13px;}
+}
