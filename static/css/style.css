@@ -19,13 +19,17 @@ html, body {height: 100%;}
 html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
 
-
 main {padding: 4vw 6vw 3vw; flex: 1; font-size: 20px;}
 main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 2em; font-size: 2em;}
 main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; width: 60%; font-size: 0.9em;}
 
 main .info {font-size: 0.9em; margin: 0 4px; line-height: 2em; color: var(--blue);}
 main .info a, main .info a:hover {color: var(--grey); padding-right: 5px; text-decoration: none; font-weight: 700;}
+
+nav {position: fixed; right: 1%; bottom: 1%; z-index: 10;}
+nav button {width: 60px; height: 60px; background-color: var(--grey); color: var(--light-grey); border-radius: 50px; text-align: center; font-size: 13px;}
+nav button:hover {background-color: var(--blue);}
+.kor {display: none;}
 
 section {padding: 2vw 6vw 3vw;}
 
@@ -60,8 +64,11 @@ img {width: 50%;}
 .award-right {flex: 0.7; text-align: left; padding-left: 1vw;}
 .award-right span {color: var(--grey); font-size: 0.7em;}
 
-footer {color: var(--light-grey); text-align: center; padding-top: 10vh;}
-footer p {font-size: 7px;}
+#contact .paragraph {text-align: center;}
+#contact button {background-color: var(--blue); color: var(--white); width: 100px; height: 50px; border-radius: 10px;}
+
+footer {color: var(--light-grey); text-align: center; padding: 10vh 0 0 0;}
+footer p {font-size: 7px; margin: 0;}
 
 @media screen and (max-width: 900px) {
     img {width: 100%};
@@ -72,5 +79,6 @@ footer p {font-size: 7px;}
     main h4 {width: 85%;}
 
     section {padding: 5vw 4vw;}
+    nav button {width: 40px; height: 40px; font-size: 9px;}
     .container {font-size: 13px;}
 }
