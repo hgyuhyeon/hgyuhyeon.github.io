@@ -46,7 +46,8 @@ section {padding: 2vw 6vw 3vw;}
 
 .paragraph {text-align: left; line-height: 1.3em; color: var(--light-grey);}
 .paragraph ul {padding-left: 1em; margin: 0;}
-.paragraph ul a {text-decoration: none; color: var(--light-grey);}
+.paragraph a {text-decoration: none; color: var(--light-grey);}
+.paragraph a:hover {color: var(--grey);}
 .paragraph li {list-style: square;}
 .paragraph li::marker {color: var(--light-grey);}
 .paragraph p {margin: 0;}
