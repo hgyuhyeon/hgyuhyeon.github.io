@@ -69,9 +69,12 @@
                     Worked as a Django/Python back-end developer.<br>
                     Participated to develop a web service, <a href="#recommade">Recommade</a>, a music recommendation service, with 7 members through the internship.
                     <ul>
-                        <li>Designed and implemented features for server-side processing using Django with 2 back-end
-                            team members.</li>
-                        <li>Applied docker for productivity improvement.</li>
+                        <li>Designed architecture and implemented API using Django.</li>
+                        <li>Applied docker for productivity improvement</li>
+                        <ul>
+                            <li>Eliminated the inconvenience of tool installation during the development process.</li>
+                            <li>Achieved simpler test with packaging and easy deployment.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -87,8 +90,12 @@
                     Python/Django를 이용하여 백엔드 개발.
                     음악 추천 프로그램을 제공하는 웹 서비스 <a href="#recommade">Recommade</a> 개발.
                     <ul>
-                        <li>Recommade의 API와 아키텍처 설계 및 개발.</li>
-                        <li>Docker를 이용하여 팀 생산성 증가 -> 개발 과정에서 툴 설치의 불편함 해소, 패키징으로 더 간단한 테스트 실현.</li>
+                        <li>아키텍처 설계 및 Django로 Recommade의 API 개발.</li>
+                        <li>Docker를 이용하여 팀 생산성 증가</li>
+                        <ul>
+                            <li>개발 과정에서 툴 설치의 불편함 해소.</li>
+                            <li>패키징으로 더 간단한 테스트 및 배포 실현.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -184,7 +191,6 @@
                     <ul>
                         <li>Designed and managed the Firebase database as well as connect it to the Unity project.</li>
                         <li>Developed user management and community services with C#.</li>
-                        <li>Deployed as Android.</li>
                     </ul>
                 </div>
             </div>
@@ -224,13 +230,15 @@
                     A website that generates playlists that go well with the uploaded photos according to the object and
                     atmosphere of it.<br>
                     Users can upload photos with their preferred genre, which improves recommendation satisfaction.<br>
-                    Users can play pieces of music, and save their recommended playlist if the user has an account.<br>
-                    Still, they can get recommendations and play music without an account.
+                    Users can play musics in the playlist and save their recommended playlist if the user has an account.<br>
                     <ul>
-                        <li>Designed server architecture and system structure of the service with colleagues.</li>
-                        <li>As a back-end developer, I designed, implemented, and tested playlist generating/saving and
-                            playlist showing features through Django/Python.</li>
-                        <li>Combined back-end, front-end, AI and database via docker-compose and deploy to AWS EC2.</li>
+                        <li>Designed service architecture and API through through Django/Python.</li>
+                        <li>Consolidated back-end, front-end, AI and database via docker-compose and deploy to AWS EC2.</li>
+                        <li>Encounterd MySQL execution error while docker-compose testing.</li>
+                        <ul>
+                            <li>Cause: MySQL container starts slower than other containers.</li>
+                            <li>Solved using healthcheck and depends_on in Docker.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -250,7 +258,11 @@
                     <ul>
                         <li>프로젝트의 시스템 구조 및 Django/Python으로 API 설계 및 개발.</li>
                         <li>Docker-compose를 이용하여 프론트엔드, 백엔드, AI를 연결하여 테스팅하고 AWS에 배포.</li>
-                        <li>Docker-compose 테스팅 중 MySQL 서버가 정상 실행되지 않는 현상 발생: MySQL 서버의 런칭 속도가 Django보다 느려서 Django의 마이그레이션이 정상 적용되지 않았음 -> docker의 depends_on, healthcheck를 활용하여 해결</li>
+                        <li>Docker-compose 테스팅 중 MySQL 서버가 정상 실행되지 않는 현상 발생</li>
+                        <ul>
+                            <li>원인은 MySQL 서버의 런칭 속도가 Django보다 느려서 Django의 마이그레이션이 정상 적용되지 않았던 것.</li>
+                            <li>Docker의 depends_on, healthcheck를 활용하여 해결.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -272,8 +284,8 @@
                     <div class="techstack">Python, Django, MySQL</div>
                     AI-based intelligent surveillance system.
                     <ul>
-                        <li>Implemented database related API using Django/Python.</li>
-                        <li>Managed face-detection data with MySQL.</li>
+                        <li>Implemented database related API using Django/Python, helped to display face-detection data to webpage.</li>
+                        <li>Managed face-detection data and implemented DAO.</li>
                     </ul>
                 </div>
             </div>
@@ -308,7 +320,12 @@
                     <div class="techstack">Python, Pandas</div>
                     <ul>
                         <li>Pre-processed weather data using Pandas, Python.</li>
-                        <li>Predicted solar power generation with ARIMA model.</li>
+                        <li>Predicted solar power generation with ARIMA model and compared with other models.</li>
+                        <li>ARIMA has higher RMSE error value than other model:</li>
+                        <ul>
+                            <li>ARIMA doesn't have Seasonality while others(SARIMA, LSTM) have it.</li>
+                            <li>Applied differencing 2 times to minimize RMSE error value for the data has Stationarity and Seasonality.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -323,7 +340,10 @@
                     <ul>
                         <li>Pandas 이용하여 날씨 데이터 전처리</li>
                         <li>ARIMA model로 태양광 발전량을 예측하고, 다른 모델을 사용한 팀원과 비교하여 교수님과 현직자 멘토님께 발표(보고).</li>
-                        <li>예측값과 실제값의 오차를 줄이기 위해 차분을 2회 적용, ARIMA 모델로도 계절성을 최대한 살릴 수 있도록 함.</li>
+                        <li>예측값과 실제값의 오차를 줄이는 작업 수행</li>
+                        <ul>
+                            <li>차분을 2회 적용, ARIMA 모델로도 계절성을 최대한 살릴 수 있도록 함.</li>
+                        </ul>
                     </ul>
                 </div>
             </div>
