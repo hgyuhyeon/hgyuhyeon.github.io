@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommade - GyuHyeon Hwang</title>
+
+    <!-- mobile thumbnail -->
+    <meta property="og:title" content="GyuHyeon Hwang">
+    <meta property="og:description" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="../static/favicon/favicon.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link href="../static/css/style.css" rel="stylesheet" />
+    <link href="../static/css/normalize.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <main data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <h2 class="title" style="margin-bottom: 0;">Recommade</h2>
+        <div class="eng">
+            <h4>
+                Jun, 2022 - Jul, 2022<br>
+                Headstart SV Internship Program<br>
+                8 members
+            </h4>
+        </div>
+        <div class="kor">
+            <h4>
+                2022.06 - 2022.07<br>
+                Headstart SV 인턴십<br>
+                8명
+            </h4>
+        </div>
+    </main>
+
+    <nav>
+        <button id="eng_btn">English</button>
+        <br>
+        <button id="kor_btn">한국어</button>
+    </nav>
+
+    <section data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
+            data-aos-duration="1500">
+            <div class="stitle">Overview</div>
+            <div class="paragraph">
+                <div class="eng">A website that recommends musics based on the image using AI.</div>
+                <div class="kor">AI를 이용한 이미지 기반 음악 추천 웹 서비스</div>
+            </div>
+            <div class="stitle">Tech stack</div>
+            <div class="paragraph">
+                <div class="techstack">Python, Django</div>
+                <div class="eng">
+                    <ul>
+                        <li>Selected the Django framework in Python to integrate the AI model into the system.</li>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>AI 모델을 시스템에 내장시키기 위해 Python 프레임워크인 Django를 선택함.</li>
+                    </ul>
+                </div>
+                <div class="techstack">MySQL</div>
+                <div class="eng">
+                    <ul>
+                        <li>Chose MySQL over the default SQLite in Django.</li>
+                        <li>MySQL made database maintenance easier, and writing SQL queries directly was a better fit for the
+                            development environment at the time</li>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>Django의 내장 SQLite 대신 사용.</li>
+                        <li>수월한 데이터베이스 유지보수와, sql문을 직접 작성해서 데이터를 불러오는 것이 당시 개발환경에 훨씬 편안한 상태였음.</li>
+                    </ul>
+                </div>
+                <div class="techstack">Nginx, Gunicorn, AWS</div>
+                <div class="eng">
+                    <ul>
+                        <li>Chose these technologies due to their excellent compatibility with Django and Python projects,
+                            ensuring smooth deployment and reliable performance.</li>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>Django 및 Python 프로젝트와의 뛰어난 호환성 때문에 선택하였으며, 안정적인 배포와 성능을 보장 가능.</li>
+                    </ul>
+                </div>
+                <div class="techstack">Docker, Git</div>
+                <div class="eng">
+                    <ul>
+                        <li>Applied these tools for collaboration; Docker reduced setup time by over 70%.</li>
+                        <li>Used Git to separate repositories for front-end, back-end, and AI, merging them later for the
+                            final build.</li>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>협업을 위해 적용한 툴로, Docker 사용으로 셋업 시간을 70% 이상 절약.</li>
+                        <li>Git으로 프론트, 백엔드, AI repository를 나누어 작업한 뒤 추후 병합.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stitle">Contributions</div>
+            <div class="paragraph">
+                <div class="eng">
+                    <ul>
+                        <li>Architected the back-end system, designing the core APIs that handled user data, image
+                            uploads, and music recommendations using Django.</li>
+                        <li>Improved API performance by optimizing Gunicorn worker settings, reducing response times
+                            from 10 seconds to 2 seconds, resulting in an 80% efficiency boost.</li>
+                        <li>Deployed the entire application to AWS EC2 using Docker Compose, integrating all system
+                            components (back-end, front-end, AI, database) into a unified and scalable solution.</li>
+                        <li>Encountered a MySQL execution error during Docker Compose testing.</li>
+                        <ul>
+                            <li>Cause: The MySQL container was starting slower than other containers.</li>
+                            <li>Solution: Implemented healthcheck and depends_on in Docker to ensure proper startup
+                                sequencing and resolve the issue.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>백엔드 시스템을 설계하고, 사용자 데이터 및 사진 업로드, 음악 추천을 처리하는 핵심 API 설계 및 구현.</li>
+                        <li>Gunicorn 설정 최적화를 통해 API 성능을 10초에서 2초로 단축하여 80% 효율성 향상.</li>
+                        <li>Docker-compose를 사용하여 애플리케이션을 AWS EC2에 배포, 백엔드, 프론트엔드, AI, 데이터베이스를 통합하여 확장 가능한 솔루션 구축.</li>
+                        <li>Docker-compose 테스팅 중 MySQL 서버가 정상 실행되지 않는 현상 발생</li>
+                        <ul>
+                            <li>원인은 MySQL 서버의 런칭 속도가 Django보다 느려서 Django의 마이그레이션이 정상 적용되지 않았던 것.</li>
+                            <li>Docker의 depends_on, healthcheck를 활용하여 해결.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="stitle">Demo</div>
+            <div class="paragraph">
+                <div class="imgcontainer">
+                    <img src="../img/Recommade.gif">
+                </div>
+            </div>
+            <div class="stitle">Source</div>
+            <div class="paragraph">
+                <a class="url" href="https://github.com/Silicon-Valley-Team-A/server">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="back">
+        <a class="back" href="../index.html#project">Back</a>
+    </section>
+
+
+    <footer>
+        <p>Copyright 2020. GYUHYEON HWANG</p>
+    </footer>
+
+
+    <!-- js -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>AOS.init();</script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

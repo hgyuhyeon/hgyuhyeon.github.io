@@ -20,7 +20,7 @@ html {scroll-behavior: smooth; overflow-y: scroll;}
 body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
 
 main {padding: 4vw 6vw 3vw; flex: 1; font-size: 20px;}
-main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 2em; font-size: 2em;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; font-size: 2em;}
 main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; width: 60%; font-size: 0.9em;}
 
 main .info {font-size: 0.9em; margin: 0 4px; line-height: 2em; color: var(--blue);}
@@ -33,10 +33,13 @@ nav button:hover {background-color: var(--blue);}
 
 section {padding: 2vw 6vw 3vw;}
 
-.container {padding: 0 1vw 5vh; font-size: 17px;}
+.container {padding: 1vh 1vw; font-size: 17px;}
 
-.title {color: var(--light-blue); font-size: 1.8em; font-weight: 800; margin-bottom: 1.1rem;}
-.stitle {color: var(--light-grey); font-size: 1.3em; line-height: 1.3em;}
+.pjt_list li {list-style: square;}
+.pjt_list a {color: var(--light-grey);}
+
+.title {color: var(--light-blue); font-size: 1.9em; font-weight: 800; margin-bottom: 1.1rem;}
+.stitle {color: var(--white); font-size: 1.5em; line-height: 1.3em;}
 .stitle span {font-size: 0.9em; color: var(--blue);}
 
 .url {text-decoration: none; color: var(--blue);}
@@ -44,7 +47,7 @@ section {padding: 2vw 6vw 3vw;}
 
 .date {color: var(--grey); font-size: 0.85em; line-height: 1.2em;}
 
-.paragraph {text-align: left; line-height: 1.3em; color: var(--light-grey);}
+.paragraph {text-align: left; line-height: 1.3em; color: var(--light-grey); margin-bottom: 3em;}
 .paragraph ul {padding-left: 1em; margin: 0;}
 .paragraph a {text-decoration: none; color: var(--light-grey);}
 .paragraph a:hover {color: var(--grey);}
@@ -52,7 +55,11 @@ section {padding: 2vw 6vw 3vw;}
 .paragraph li::marker {color: var(--light-grey);}
 .paragraph p {margin: 0;}
 
-.techstack {font-size: 0.9em; color: var(--pink);}
+
+#back {text-align: center;}
+.back {font-size: 1.5em; font-weight: 800; color: var(--grey);}
+
+.techstack {font-size: 0.9em; color: var(--pink); }
 
 .imgcontainer {display: flex; flex-direction: row; flex-wrap: wrap; padding: 1%;}
 img {width: 50%;}

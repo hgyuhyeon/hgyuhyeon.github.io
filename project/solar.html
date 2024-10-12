@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommade - GyuHyeon Hwang</title>
+
+    <!-- mobile thumbnail -->
+    <meta property="og:title" content="GyuHyeon Hwang">
+    <meta property="og:description" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="../static/favicon/favicon.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link href="../static/css/style.css" rel="stylesheet" />
+    <link href="../static/css/normalize.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <main data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <h2 class="title" style="margin-bottom: 0;">Analysis of Solar Power Prediction with Data-Driven Approaches</h2>
+        <div class="eng">
+            <h4>
+                May, 2021 - Oct, 2021<br>
+                Global Joint Project at Chungbuk National University<br>
+                4 members | 2 mentors
+            </h4>
+        </div>
+        <div class="kor">
+            <h4>
+                2021.05 - 2021.10<br>
+                충북대학교 국제산학프로젝트<br>
+                학생 4명 | 멘토(교수님, 현직자분) 2명
+            </h4>
+        </div>
+    </main>
+
+    <nav>
+        <button id="eng_btn">English</button>
+        <br>
+        <button id="kor_btn">한국어</button>
+    </nav>
+
+    <section data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
+            data-aos-duration="1500">
+            <div class="stitle">Overview</div>
+            <div class="paragraph">
+                <div class="eng"></div>
+                <div class="kor"></div>
+            </div>
+            <div class="stitle">Tech stack</div>
+            <div class="paragraph">
+                <div class="techstack">Python, Pandas</div>
+                <div class="eng">
+                    <ul>
+                        <li>Used Pandas for efficient data preprocessing and analysis.</li>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>효과적인 데이터 전처리 및 분석을 위해 Pandas 사용.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stitle">Contributions</div>
+            <div class="paragraph">
+                <div class="eng">
+                    <ul>
+                        <li>Pre-processed large weather and solar power datasets using Pandas, ensuring accuracy and eliminating noise.</li>
+                        <li>Applied the ARIMA model to predict solar power generation, achieving a 5% improvement in forecast accuracy using differencing.</li>
+                        <ul>
+                            <li>ARIMA doesn't have Seasonality while other models(SARIMA, LSTM) have, it had biggest RMSE error value among them.</li>
+                            <li>Applied differencing 2 times to minimize RMSE error value for the data has Stationarity and Seasonality.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="kor">
+                    <ul>
+                        <li>Pandas를 사용하여 대규모 날씨 및 태양광 데이터 전처리, 데이터 정확성 보장 및 잡음 제거.</li>
+                        <li>ARIMA 모델을 사용하여 태양광 발전량을 예측, 차분을 통해 5% 예측 정확도 향상.</li>
+                        <ul>
+                            <li>ARIMA모델은 비교군인 SARIMA, LSTM과 달리 계절성이 없어 오차가 컸음.</li>
+                            <li>차분을 2회 적용, ARIMA 모델로도 계절성을 최대한 살릴 수 있도록 함.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="back">
+        <a class="back" href="../index.html#project">Back</a>
+    </section>
+
+
+    <footer>
+        <p>Copyright 2020. GYUHYEON HWANG</p>
+    </footer>
+
+
+    <!-- js -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>AOS.init();</script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>
