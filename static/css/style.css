@@ -17,9 +17,9 @@ font-family: "Do Hyeon", sans-serif;
 
 html, body {height: 100%;}
 html {scroll-behavior: smooth; overflow-y: scroll;}
-body {margin: 0; padding: 0; display: flex; flex-direction: column; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
+body {margin: 0; padding: 0; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
 
-main {padding: 10vh 6vw; flex: 1; font-size: 20px;}
+main {padding: 10vw 6vw; flex: 1; font-size: 20px;}
 main h2 {color: var(--white); letter-spacing: 0.08em; margin: 3vh 0; font-size: 4em;}
 main h3 {color: var(--light-grey); letter-spacing: 0.08em; margin: 0 4px; font-size: 1.5em;}
 main h4 {color: var(--grey); letter-spacing: 0.08em; margin: 0 4px; line-height: 1.2em; width: 60%; font-size: 0.9em;}
@@ -63,7 +63,7 @@ section {padding: 2vw 6vw 3vw;}
 #back {text-align: center;}
 .back {font-size: 1.5em; font-weight: 800; color: var(--grey);}
 
-.techstack {font-size: 0.9em; color: var(--pink);}
+.techstack {font-size: 0.8em; color: var(--pink);}
 
 .imgcontainer {display: flex; flex-direction: row; flex-wrap: wrap; padding: 1%;}
 img {width: 50%;}
@@ -83,13 +83,16 @@ footer p {font-size: 7px; margin: 0;}
     img {width: 100%};
 }
 
-@media screen and (max-width: 700px) {
-    main {padding: 5vh 4vw;}
+@media screen and (max-width: 600px) {
+    main {padding: 3vw 4vw;}
     main h2 {font-size: 2em;}
     main h3 {font-size: 1em;}
     main h4 {width: 85%; font-size: 0.7em;}
 
     section {padding: 5vw 4vw;}
+
+    .title {font-size: 1.5em;}
+    .stitle {font-size: 1.1em;}
     nav button {width: 40px; height: 40px; font-size: 9px;}
     .container {font-size: 13px;}
 }
