@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOPLE - GyuHyeon Hwang</title>
+
+    <!-- mobile thumbnail -->
+    <meta property="og:title" content="GyuHyeon Hwang">
+    <meta property="og:description" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="../static/favicon/favicon.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link href="../static/css/style.css" rel="stylesheet" />
+    <link href="../static/css/normalize.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <main data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <h2 class="title" style="margin-bottom: 0;">VOPLE</h2>
+        <div class="eng">
+            <h4>
+                Jan, 2025 - Feb, 2025<br>
+                SSAFY<br>
+                6 members
+            </h4>
+        </div>
+        <div class="kor">
+            <h4>
+                2025.01 - 2025.02<br>
+                SSAFY<br>
+                6명
+            </h4>
+        </div>
+    </main>
+
+    <nav>
+        <button id="eng_btn">English</button>
+        <button id="kor_btn">한국어</button>
+    </nav>
+
+    <section data-aos="fade-up" data-aos-offset="50" data-aos-duration="1500">
+        <div class="container" data-aos="fade-up" data-aos-offset="50" data-aos-delay="200"
+            data-aos-duration="1500">
+            <div class="stitle">Overview</div>
+            <div class="paragraph">
+                <div class="eng">Voting platform for middle and high school.</div>
+                <div class="kor">중·고등학교 학생 임원 투표 서비스</div>
+            </div>
+            <div class="stitle">Tech stack</div>
+            <div class="paragraph">
+                <div class="techstack">Java, Spring Boot</div>
+                <!-- <div class="eng">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="kor">
+                    <ul>
+                        <li>스트리밍, 채팅 등 실시간 정보를 많이 처리해서 부하를 잘 버티기 좋은 Spring Boot 선택</li>
+                    </ul>
+                </div>
+                <div class="techstack">MySQL</div>
+                <!-- <div class="eng">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="kor">
+                    <ul>
+                        <li>프로젝트와 관련된 데이터는 MySQL에, 채팅 데이터는 redis에 저장 중.</li>
+                    </ul>
+                </div>
+                <div class="techstack">RTMP/HLS, FFmpeg</div>
+                <!-- <div class="eng">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="kor">
+                    <ul>
+                        <li>브라우저로부터 방송 화면에 대한 소켓이 도착 -> FFmpeg로 RTMP 변환 -> RTMP/HLS 서버 -> 브라우저 HLS 수신</li>
+                    </ul>
+                </div>
+                <div class="techstack">Nginx, Docker, Jenkins, AWS</div>
+                <!-- <div class="eng">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="kor">
+                    <ul>
+                        <li>인프라 관련 기술 스택</li>
+                        <li>Nginx: 웹서버 및 rtmp 프로토콜 관리</li>
+                        <li>Docker: 서비스 컨테이너화</li>
+                        <li>Jenkins: CI/CD를 위해 사용, 프로젝트가 GitLab을 사용하여 Jenkins를 이용해 CI/CD 구축.</li>
+                        <li>AWS: 배포</li>
+                    </ul>
+                </div>
+                <div class="techstack">Git, GitLab, Jira</div>
+            </div>
+            <div class="stitle">Contributions</div>
+            <div class="paragraph">
+                <!-- <div class="eng">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="kor">
+                    <ul>
+                        <li>RTMP 스트리밍이 20~30초의 지연에서 10초 미만의 지연 시간을 갖도록 FFmpeg의 파라미터 및 Nginx의 설정 조정</li>
+                        <li>프로젝트 인프라 셋업 및 시스템 관리</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="stitle">Demo</div>
+            <div class="paragraph">
+                <div class="imgcontainer">
+                    <img src="">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section id="back">
+        <a class="back" href="../index.html#project">Back</a>
+    </section>
+
+
+    <footer>
+        <p>Copyright 2020. GYUHYEON HWANG</p>
+    </footer>
+
+
+    <!-- js -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>AOS.init();</script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>
