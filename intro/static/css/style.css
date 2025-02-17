@@ -9,7 +9,7 @@ font-family: "Do Hyeon", sans-serif;
     --light-blue: #b3c8da;
     --pink: #d1a1a1;
     --purple: #827397;
-    --black: #111111;
+    --black: #222222;
     --grey: #646464;
     --light-grey: #c1c1c1;
     --white: #F1F6F9;
@@ -18,17 +18,21 @@ font-family: "Do Hyeon", sans-serif;
 html, body {height: 100%;}
 body {margin: 0; padding: 0; background-color: var(--black); font-family: "Do Hyeon", sans-serif; font-weight: 500;}
 
-section {position: absolute; height: 80vh; width: calc(100vw - 20vh); top: 10vh; left: 10vh; border: solid 2px var(--white); border-radius: 10px; transition: 0.1s; font-size: 1vw;}
+section {position: absolute; height: 80vh; width: calc(100vw - 20vh); top: 10vh; left: 10vh; border: solid 2px var(--blue); border-radius: 10px; transition: 0.1s; font-size: 1.3em;}
+hr {background-color: var(--blue); height: 1px; border: 0;}
 
-main {padding: 20px 3vw 0; font-size: 20px;}
-main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 1.5em; font-size: 2em;}
+main {padding: 20px 3vw 0;}
+main h2 {color: var(--white); letter-spacing: 0.08em; margin: 0; line-height: 1.5em; font-size: 2.4em;}
 
 .container {padding: 10px 3vw; display: flex;}
 
-.title {color: var(--light-blue); font-size: 24px; font-weight: 800; margin-bottom: 0.8rem;}
-.stitle {color: var(--grey); font-size: 18px; line-height: 1.3em; margin-top: 0.5rem;}
+.title {color: var(--blue); font-size: 1.3em; font-weight: 800; margin-bottom: 0.5rem;}
+.stitle {color: var(--grey); font-size: 0.9em;}
 
-.paragraph {text-align: left; font-size: 15px; color: var(--light-grey); width: (50% - 15px); padding-right: 15px; line-height: 1.4em;}
+.paragraph {text-align: left; font-size: 1em; color: var(--light-grey); width: (50% - 15px); padding-right: 15px; line-height: 1.3em;}
 .paragraph span {color: var(--pink);}
+
+ul {padding-left: 1em; margin: 0;}
+li {list-style: square;}
 
 .important {position: absolute; bottom: 8vh; left: 3vw; color: var(--purple); border: solid 1px var(--purple); padding: 30px; border-top-right-radius: 100px; border-bottom-right-radius: 100px;}
